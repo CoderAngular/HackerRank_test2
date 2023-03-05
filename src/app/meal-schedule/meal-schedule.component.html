@@ -10,22 +10,22 @@
           </tr>
         </thead>
         <tbody data-test-id="meal-schedule">
-          <tr *ngFor="let guest of guestList; let idx=index" class="slide-up-fade-in" id="schedule-{{idx}}">
+          <tr *ngFor="let meal of menuList; let idx=index" class="slide-up-fade-in" id="schedule-{{idx}}">
             <!-- Use below to render row for each object-->
-            <td data-test-id="date">{{guest.startDate}}</td>
+            <td data-test-id="date">{{meal.date | json}}</td>
             <td>
               <ul data-test-id="breakfast-list">
-                <li>{{guest.name}}</li>
+                <li>{{meal.name}}</li>
               </ul>
             </td>
             <td>
               <ul data-test-id="lunch-list">
-                <li>{{guest.name}}</li>
+                <li>{{meal.name}}</li>
               </ul>
             </td>
             <td>
               <ul data-test-id="dinner-list">
-                <li>{{guest.name}}</li>
+                <li>{{meal.name}}</li>
               </ul>
             </td>
           </tr>

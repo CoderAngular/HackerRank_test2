@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from "@angular/core";
-import { Guest } from '../app.component';
+import { Guest, Menu } from '../app.component';
 
 @Component({
   selector: "meal-schedule",
@@ -7,7 +7,7 @@ import { Guest } from '../app.component';
   styleUrls: ["./meal-schedule.component.css"]
 })
 export class MealSchedule implements OnInit {
-  @Input() guestList: Guest[] = [];
+  @Input() menuList: Menu[] = [];
 
   ngOnInit() {
 
